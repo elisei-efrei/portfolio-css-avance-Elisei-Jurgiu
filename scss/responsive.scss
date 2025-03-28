@@ -1,0 +1,43 @@
+@import 'variables';
+
+@media screen and (max-width: $breakpoint-tablet) {
+    .navbar {
+        flex-direction: column;
+        
+        .nav-links {
+            margin-top: $spacing-medium;
+            flex-direction: column;
+            align-items: center;
+            
+            li {
+                margin: $spacing-small 0;
+            }
+        }
+    }
+    
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero {
+        .hero-content {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                
+                .btn {
+                    margin: $spacing-small 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+}

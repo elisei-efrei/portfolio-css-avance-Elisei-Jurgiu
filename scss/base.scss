@@ -1,0 +1,33 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-main;
+    font-size: $font-size-base;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    @include transition-smooth;
+
+    &:hover {
+        color: darken($primary-color, 10%);
+    }
+}
+
+h1, h2, h3 {
+    margin-bottom: $spacing-medium;
+}
+
+ul {
+    list-style: none;
+}

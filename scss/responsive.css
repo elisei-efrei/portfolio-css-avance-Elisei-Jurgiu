@@ -1,0 +1,30 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .nav-links {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links li {
+    margin: 0.5rem 0;
+  }
+  .skills-grid, .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero .hero-content .hero-buttons {
+    flex-direction: column;
+  }
+  .hero .hero-content .hero-buttons .btn {
+    margin: 0.5rem 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=responsive.css.map */

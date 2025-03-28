@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: #217dbb;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}/*# sourceMappingURL=base.css.map */

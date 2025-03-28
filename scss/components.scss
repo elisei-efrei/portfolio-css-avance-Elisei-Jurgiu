@@ -1,0 +1,92 @@
+@import 'variables';
+
+.btn {
+    display: inline-block;
+    padding: $spacing-small $spacing-medium;
+    border-radius: 5px;
+    @include transition-smooth;
+    
+    &-primary {
+        background-color: $primary-color;
+        color: $light-text;
+        
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+    
+    &-secondary {
+        background-color: transparent;
+        border: 2px solid $primary-color;
+        color: $primary-color;
+        
+        &:hover {
+            background-color: $primary-color;
+            color: $light-text;
+        }
+    }
+    
+    &-small {
+        padding: $spacing-small;
+        font-size: $font-size-small;
+    }
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-medium;
+    
+    .skill-item {
+        background-color: white;
+        padding: $spacing-medium;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        
+        h3 {
+            margin-bottom: $spacing-medium;
+            color: $primary-color;
+            display: flex;
+            align-items: center;
+            
+            i {
+                margin-right: $spacing-small;
+                color: $secondary-color;
+            }
+        }
+        
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: $spacing-small;
+                
+                i {
+                    margin-right: $spacing-small;
+                    color: $primary-color;
+                    width: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-medium;
+    
+    .project-card {
+        background-color: $light-text;
+        padding: $spacing-medium;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        
+        .project-links {
+            margin-top: $spacing-medium;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
